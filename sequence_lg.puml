@@ -1,0 +1,81 @@
+@startuml Championnat de Ski
+Epreuve "1" o-- "0..n" Participant
+Epreuve "1" *-- "0..n" Passage
+Participant "1" o-- "0..2"Passage
+Participant "1" o-- "0..n" Profil
+Participant"1" o-- "0..n"Categorie
+
+
+Class Epreuve {
+    -id
+    -Nom
+    -Lieu
+    -Date
+    
+    -nbParticipant
+
+    +creerEpreuve()
+    +ModifierEpreuve()
+    +SupprimerEpreuve()
+
+
+    +exporterListeParticipant()
+    +importerListeParticipant()
+
+}
+
+Class Participant {
+    -id
+    
+    -Nom
+    -Prénom
+    -DateDeNaissance
+    -Email
+    -Image
+
+    -Profil
+    -Categorie
+
+    +creerParticipant()
+    +supprimerParticipant()
+    +modifierParticipant()
+
+    +exporterListeParticipant()
+    +importerListeParticipant()
+
+
+
+
+}
+
+Class Passage {
+    -id
+
+    -Nb_de_passage
+}
+
+
+Class Profil {
+    -id
+    -Nom
+
+    +creerProfil()
+    +ModifierProfil()
+
+}
+
+Class Categorie {
+    -id
+
+    -Nom
+
+    +creerCategorie()
+    +supprimerCategorie()
+
+}
+
+@enduml
+
+' Extension     ClassX <|-- ClassY
+' Aggregation   ClassX o-- ClassY
+' Composition   ClassX *-- ClassY

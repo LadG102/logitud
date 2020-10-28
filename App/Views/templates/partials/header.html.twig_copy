@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <div class="logo">
+                        <img src="assets/img/logo-logitud-210x60.png" alt="logo logitud | Application de Ski">
+                    </div>
+
+                    <nav>
+
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
