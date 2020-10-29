@@ -121,3 +121,24 @@ h2 {
 .validation-bar {
     margin-top: 20px;
 }
+
+
+/******************** creation-participant.html.twig */
+
+form.form-creation-participant {
+    width: 370px;
+}
+
+.row.creation-participant {
+    margin-top: 100px;
+}
+
+/* Formulaire */
+
+.validation-bar {
+    margin-top: 20px;
+}
+
+.dropdown {
+    margin-top: 10px;
+}

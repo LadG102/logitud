@@ -24,7 +24,7 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) 
     $r->addRoute('GET', '/accueil', [new AccueilControllers(), 'index']);
     $r->addRoute('GET', '/categorie', [new CategorieControllers(), 'categorieTestControllers']);
     $r->addRoute('GET', '/epreuve', [new EpreuveControllers(), 'creationEpreuve']);
-    $r->addRoute('GET', '/participant', [new ParticipantControllers(), 'participantTestControllers']);
+    $r->addRoute('GET', '/participant', [new ParticipantControllers(), 'creationParticipant']);
     $r->addRoute('GET', '/passage', [new PassageControllers(), 'passageTestControllers']);
     $r->addRoute('GET', '/profil', [new ProfilControllers(), 'profilTestControllers']);
     $r->addRoute('GET', '/profil/{name}', [new ProfilControllers(), 'profilTestControllers']);

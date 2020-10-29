@@ -1,0 +1,97 @@
+{% extends "template-model-1.html.twig" %}
+
+{% block title %}
+Création d'un participant
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-4 column-left">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <header>
+                            <div class="logo">
+                                <img src="assets/img/logo-logitud-105x30_2x.png"
+                                    alt="logo logitud | Application de Ski">
+                            </div>
+                        </header>
+                    </div>
+                </div>
+
+                <div class="row creation-participant">
+
+                    <div class="col-xs-12 text-center">
+                        <h1>AJOUT D'UN PARTICIPANT</h1>
+
+                        <form class="form-creation-participant">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nomParticipant" name="nomParticipant"
+                                    placeholder="Nom">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="prenomParticipant" name="prenomParticipant"
+                                    placeholder="Prénom">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="dateNaissanceParticipant"
+                                    name="dateNaissanceParticipant"
+                                    placeholder="Date de naissance au format XX/XX/XXXX">
+                            </div>
+
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                <label class="custom-file-label" for="validatedCustomFile">Choisir la photo</label>
+                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                            </div>
+
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Choisir une catégorie
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">M1</a>
+                                    <a class="dropdown-item" href="#">M2</a>
+                                    <a class="dropdown-item" href="#">M3</a>
+                                    <a class="dropdown-item" href="#">Sénior</a>
+                                    <a class="dropdown-item" href="#">V</a>
+                                    <a class="dropdown-item" href="#">Snow</a>
+                                    <a class="dropdown-item" href="#">Nouvelle Glisse</a>
+                                </div>
+
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Choisir un profil
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Policier</a>
+                                        <a class="dropdown-item" href="#">ASVP : ex-pervenches</a>
+                                        <a class="dropdown-item" href="#">Open : Conjoints et/ ou enfants </a>
+                                        <a class="dropdown-item" href="#">Garde-champêtre</a>
+
+                                    </div>
+                                </div>
+
+
+                                <button type="submit" class="btn btn-primary" width="100">Valider</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-12 col-md-8 column-right">
+
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
