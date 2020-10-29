@@ -19,13 +19,29 @@ Création d'une epreuve
                                     alt="logo logitud | Application de Ski">
                             </div>
                         </header>
-
-
                     </div>
                 </div>
-                <div class="row">
+
+                <div class="row creation-epreuve">
                     <div class="col-xs-12 text-center">
                         <h1>CRÉATION D'UNE NOUVELLE ÉPREUVE</h1>
+
+                        <form class="form-creation-epreuve">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nomEpreuve" name="nomEpreuve"
+                                    placeholder="Renseigner le Nom de l'epreuve">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="Renseigner le lieuEpreuve"
+                                    name="lieuEpreuve" placeholder="Renseigner le Lieu de l'epreuve">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="dateEpreuve" name="dateEpreuve"
+                                    placeholder="Date de l'epreuve au format XX/XX/XXXX">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" width="100">Valider</button>
+                        </form>
 
                     </div>
                 </div>
@@ -33,6 +49,116 @@ Création d'une epreuve
 
         </div>
         <div class="col-sm-12 col-md-8 column-right">
+            <div class="container">
+                <div class="row" style="display:block; height: 250px; margin-top: 50px;">
+                    <div class="col-sm-12">
+                        <h2>PARAMÉTRAGE DES PROFILS</h2>
+
+                        <form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check-policier"
+                                    name="check-policier" checked>
+                                <label class="form-check-label" for="check-policier">
+                                    Policier
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check-pervenches"
+                                    name="check-pervenches">
+                                <label class="form-check-label" for="check-pervenches">
+                                    AVSP : ex-pervenches
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check-open"
+                                    name="check-open">
+                                <label class="form-check-label" for="check-open">
+                                    Open : Conjoints et/ou enfants
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check-garde-champetre"
+                                    name="check-garde-champetre">
+                                <label class="form-check-label" for="check-garde-champetre">
+                                    Garde-champêtres
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="container validation-bar">
+                        <div class="row d-flex">
+                            <div class="col-sm-4">Ajouter</div>
+                            <div class="col-sm-4">Supprimer</div>
+                            <div class="col-sm-4">valider</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row" style="display:block; height: 250px;">
+                    <div class=" col-sm-12">
+                        <h2>PARAMÉTRAGE DES CATÉGORIES</h2>
+
+
+                        <form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check-m1" name="check-m1">
+                                <label class="form-check-label" for="check-m1">
+                                    M1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check-m2" name="check-m2">
+                                <label class="form-check-label" for="check-m2">
+                                    M2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check-m3" name="check-m3">
+                                <label class="form-check-label" for="check-m3">
+                                    M3
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check-senior"
+                                    name="check-senior">
+                                <label class="form-check-label" for="check-senior">
+                                    Sénior
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check-v" name="check-v">
+                                <label class="form-check-label" for="check-v">
+                                    V
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check-snow"
+                                    name="check-snow">
+                                <label class="form-check-label" for="check-snow">
+                                    Snow
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check-nouvelle-glisse"
+                                    name="check-nouvelle-glisse">
+                                <label class="form-check-label" for="check-nouvelle-glisse">
+                                    Nouvelle Glisse (NG)
+                                </label>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container text-right" style="margin-right: 50px;">
+                    SUIVANT
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
