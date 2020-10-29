@@ -6,8 +6,50 @@
     color: #444444;
 }
 
+/******************** TEST */
 
 /******************** RÈGLES GÉNÉRALES */
+/********* Boutons */
+.button-index {
+    padding: 10px 120px;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: #444444;
+    border: 1px solid #fff;
+
+    transition: all 1s ease;
+}
+
+.button-index:hover {
+    color: #444444;
+    background-color: #fff;
+    border: 1px solid #444444;
+}
+
+/********* Liens */
+a:hover {
+    text-decoration: none;
+}
+
+/********* Marges */
+/* bottom */
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+/********* Typographie */
+
+/* Titre */
+
+h1 {
+    font-size: 20px;
+}
+
+
+
 
 
 
@@ -16,4 +58,46 @@
 
 /******************** HEADERS */
 /****** header-index */
-/** Logo / Nav */
+
+
+
+/* Logo / Nav */
+.container-logo-nav {
+    z-index: 9000;
+    padding: 40px 50px;
+
+}
+
+/* Carousel */
+
+.carousel-caption {
+    margin-bottom: 15vw;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 10%;
+}
+
+.carousel-indicators {
+    bottom: 7vw;
+}
+
+
+
+
+/******************** index.html.twig */
+.section-button-index {
+    max-width: 1080px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+/******************** creation-epreuve.html.twig */
+
+
+.column-left {
+    border-right: 1px solid #444444;
+    height: 100vh;
+}

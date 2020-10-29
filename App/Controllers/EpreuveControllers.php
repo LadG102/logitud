@@ -9,4 +9,9 @@ class EpreuveControllers
     {
         echo ('Vous êtes sur la page EPREUVE');
     }
+    public function creationEpreuve()
+    {
+        $twigtest = new ConfigTwig();
+        echo $twigtest->twig->render('creation-epreuve.html.twig');
+    }
 }
