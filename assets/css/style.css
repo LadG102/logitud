@@ -40,6 +40,12 @@ a:hover {
     margin-bottom: 25px;
 }
 
+/* Top */
+
+.mt-15 {
+    margin-top: 15px;
+}
+
 /********* Typographie */
 
 /* Titre */
@@ -137,8 +143,4 @@ form.form-creation-participant {
 
 .validation-bar {
     margin-top: 20px;
-}
-
-.dropdown {
-    margin-top: 10px;
 }

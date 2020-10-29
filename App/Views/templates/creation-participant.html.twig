@@ -42,44 +42,39 @@ Création d'un participant
                                     placeholder="Date de naissance au format XX/XX/XXXX">
                             </div>
 
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                                <label class="custom-file-label" for="validatedCustomFile">Choisir la photo</label>
-                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                            <div class="form-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                    <label class="custom-file-label" for="validatedCustomFile">Choisir la photo</label>
+                                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                </div>
                             </div>
 
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Choisir une catégorie
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">M1</a>
-                                    <a class="dropdown-item" href="#">M2</a>
-                                    <a class="dropdown-item" href="#">M3</a>
-                                    <a class="dropdown-item" href="#">Sénior</a>
-                                    <a class="dropdown-item" href="#">V</a>
-                                    <a class="dropdown-item" href="#">Snow</a>
-                                    <a class="dropdown-item" href="#">Nouvelle Glisse</a>
-                                </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>M1</option>
+                                    <option>M2</option>
+                                    <option>M3</option>
+                                    <option>Sénior</option>
+                                    <option>V</option>
+                                    <option>Snow</option>
+                                    <option>Nouvelle Glisse</option>
+                                </select>
+                            </div>
 
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Choisir un profil
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Policier</a>
-                                        <a class="dropdown-item" href="#">ASVP : ex-pervenches</a>
-                                        <a class="dropdown-item" href="#">Open : Conjoints et/ ou enfants </a>
-                                        <a class="dropdown-item" href="#">Garde-champêtre</a>
+                            <div class="form-group">
 
-                                    </div>
-                                </div>
+                                <select class="form-control">
+                                    <option>Policier</option>
+                                    <option>ASVP : ex-pervenches</option>
+                                    <option>Open : Conjoints et/ ou enfants</option>
+                                    <option>Garde-champêtre</option>
+                                </select>
+                            </div>
 
-
+                            <div class="form-group">
                                 <button type="submit" class="btn btn-primary" width="100">Valider</button>
+                            </div>
                         </form>
                     </div>
                 </div>
