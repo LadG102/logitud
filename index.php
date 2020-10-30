@@ -24,7 +24,10 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) 
     $r->addRoute('GET', '/accueil', [new AccueilControllers(), 'index']);
     $r->addRoute('GET', '/categorie', [new CategorieControllers(), 'categorieTestControllers']);
     $r->addRoute('GET', '/epreuve', [new EpreuveControllers(), 'creationEpreuve']);
+    $r->addRoute('POST', '/epreuve', [new EpreuveControllers(), 'requete']);
+
     $r->addRoute('GET', '/participant', [new ParticipantControllers(), 'creationParticipant']);
+    $r->addRoute('POST', '/participant', [new ParticipantControllers(), 'creationParticipant']);
     $r->addRoute('GET', '/passage', [new PassageControllers(), 'passageTestControllers']);
     $r->addRoute('GET', '/profil', [new ProfilControllers(), 'profilTestControllers']);
     $r->addRoute('GET', '/profil/{name}', [new ProfilControllers(), 'profilTestControllers']);
@@ -72,7 +75,7 @@ switch ($routeInfo[0]) {
 
 
 //  ! DUMP DE LA REQUEST.....................;
-// dump($request);
+dump($request);
 
 
 // FIN avec HTTP FOUNDATION
