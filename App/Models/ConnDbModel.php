@@ -41,7 +41,7 @@ class ConnectionDb
 
         // TODO : Pour vérifier la connection:
         // TODO : 1/ on utilise le terminal avec la ligne de commande suivante : $ php App/db/connDb.php
-        // TODO : 2/ si la connection est établie le message ligne 26 apparait 'Database Connection established ! -' sinon le catch renvoie l'erreur
+        // TODO : 2/ si la connection est établie le message ligne 34 apparait 'Database Connection established ! -' sinon le catch renvoie l'erreur
 
         // * POUR récupérer la connection dans un autre fichier il faut ajouter à l'entête du fichier :
         //TODO :  require 'path/connDb.php';
