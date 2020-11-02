@@ -2,10 +2,21 @@
 
 namespace App\Models;
 
-use App\Model\ConnectionDb;
+use App\Models\ConnectionDb;
 
-class EpreuveModel
+class EpreuveModel extends ConnectionDb
 {
+    public function addEpreuve($request)
+    {
+        $pdo = $this->ConnDb();
+        $pdo = $pdo->prepare('INSERT INTO epreuve(id_epreuve, nomEpreuve, lieuEpreuve, dateEpreuve) VALUES(:id, :nom, :lieu, :dateEpreuve)');
+        $pdo->execute(array(
+            'id' => NULL,
+            'nom' => NULL,
+            'lieu' => NULL,
+            'dateEpreuve' => NULL
+        ));
+    }
     // public function __construct()
     // {
     //     $pdo = new ConnectionDb();

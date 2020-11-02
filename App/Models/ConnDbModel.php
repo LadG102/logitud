@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Model;
+namespace App\Models;
 
 class ConnectionDb
 {
@@ -31,7 +31,8 @@ class ConnectionDb
         try {
             // On va stocker ici le résultat de la tentative de connection "\ de (\PDO) -> fait référence à la classe PHP
             $pdo = new \PDO($dsn, $user, $password, $options);
-            echo 'Database Connection established ! - ';
+            // echo 'Database Connection established ! - ';
+            return $pdo; //* je renvoie les infos contenus dans $pdo
 
             // On va réaliser le catch grâce à la classe PDOException (\PDOException) et on stocke le catch dans $e
         } catch (\PDOException $e) {
@@ -40,7 +41,8 @@ class ConnectionDb
         }
 
         // TODO : Pour vérifier la connection:
-        // TODO : 1/ on utilise le terminal avec la ligne de commande suivante : $ php App/db/connDb.php
+        // TODO : 1/ on utilise le terminal avec la ligne de commande suivante : 
+        // $ php App/..path/connDb.php
         // TODO : 2/ si la connection est établie le message ligne 34 apparait 'Database Connection established ! -' sinon le catch renvoie l'erreur
 
         // * POUR récupérer la connection dans un autre fichier il faut ajouter à l'entête du fichier :
