@@ -31,8 +31,8 @@ class ConnectionDb
         try {
             // On va stocker ici le résultat de la tentative de connection "\ de (\PDO) -> fait référence à la classe PHP
             $pdo = new \PDO($dsn, $user, $password, $options);
-            // echo 'Database Connection established ! - ';
-            return $pdo; //* je renvoie les infos contenus dans $pdo
+            //* echo 'Database Connection established ! - ';
+            return $pdo; // je renvoie les infos contenus dans $pdo
 
             // On va réaliser le catch grâce à la classe PDOException (\PDOException) et on stocke le catch dans $e
         } catch (\PDOException $e) {
